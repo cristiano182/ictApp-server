@@ -1,8 +1,7 @@
 const mongoose = require('mongoose')
 
 
-mongoose.connect('mongodb://stark182:stark182@ds054999.mlab.com:54999/ucs_unifesp', {
-
+mongoose.connect(process.env.DB_URL, {
     useCreateIndex: true,
     useNewUrlParser: true,
     useFindAndModify: false

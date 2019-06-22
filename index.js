@@ -3,7 +3,7 @@ const app = require('express')()
 const server = require('http').createServer(app)
 const bodyParser = require('body-parser')
 const cors = require('cors')
-
+require('dotenv/config');
 require('./src/config/database')
 
 
